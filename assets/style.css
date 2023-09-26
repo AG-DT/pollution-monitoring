@@ -1,0 +1,425 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    /*background-color: #F7F7F7;*/
+    background-color: #FFFFF0;
+}
+
+/* app.py + Navbar */
+
+.mb-2{
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 70px !important;
+}
+
+.ms-2{
+    margin-left: 15px;
+    font-size: 28px;
+}
+
+/* Home Page */
+
+.home-header{
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    color: #FFA500;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.home-header-brief{
+    position: absolute;
+    top: 270px;
+    left: 80px;
+    color: #FFA500;
+    margin: 4px auto;
+    text-align: left;
+    
+}
+
+.home-header-container{
+    background-image: url("/assets/earth-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50vh !important;
+}
+
+.img-1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.home-H2-container{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+    line-height: 1.5;
+}
+
+/* Common for all pages */
+
+.back{
+    display: inline;
+    position: absolute;
+    color: #787878;
+    margin: 10px;
+}
+
+.header {
+    background-color: #222222;
+    height: 288px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0px;
+}
+
+.header-emoji {
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-title {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-description {
+    color: #CFCFCF;
+    margin: 4px auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+.home{
+
+}
+
+/* Year-wise Timeseries Visualization */
+
+.wrapper-1 {
+    margin-right: 0px;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid: 50vh / 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    stroke: #FFA500;
+}
+
+.map-1{
+    top: 10px;
+    position: relative;
+    height: 50vh;
+    max-height: 50vh;
+    min-height: 50vh;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+    /*margin-top: 5px;*/
+    margin-bottom: 15px;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* Multi-year Timeseries and Trendlines visualization */
+
+.wrapper-2{
+    /*display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    padding: 10px;
+    grid-column-gap: 10px;
+    stroke: #FFA500;*/
+    margin-right: 0px;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid: auto / 1fr;
+    width: 100%;
+    height: 350vh;
+    max-width: 100%;
+    max-height: 350vh;
+    min-width: 100%;
+    min-height: 350vh;
+    position: relative;
+    /*padding: 10px;
+    grid-row-gap: 20px;
+    background-color: #FFFFF0;
+    stroke: #FFA500;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);*/
+}
+
+.map-2{
+    top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    display: block;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-7{
+    /*display: inline-block;
+    width: 100vw;
+    height: 1fr;
+    max-width: 100vw;
+    max-height: 1fr;
+    min-width: 100vw;
+    min-height: 1fr;
+    padding: 10px;
+    position: absolute;*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    display: block;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-8{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-9{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-10{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-11{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.card-12{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    width: 100%;
+    height: 50vh;
+    max-width: 100%;
+    max-height: 50vh;
+    min-width: 100%;
+    min-height: 50vh;
+    position: relative;
+    /*padding: 10px;
+    background-color:  #FFBF00;*/
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.menu {
+    height: 112px;
+    width: 912px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 24px;
+    margin: -80px auto 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.Select-control {
+    width: 256px;
+    height: 48px;
+}
+
+.Select--single > .Select-control .Select-value, .Select-placeholder {
+    line-height: 48px;
+}
+
+.Select--multi .Select-value-label {
+    line-height: 32px;
+}
+
+.menu-title {
+    text-align: center;  /* Only to be used for multigraph scenario 
+                                            OR
+                                     Use as deemed fit */
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #FFA500;
+}
+
+.dropdown {
+    text-align: center;  /* Only to be used for multigraph scenario 
+                                            OR
+                                     Use as deemed fit */
+}
