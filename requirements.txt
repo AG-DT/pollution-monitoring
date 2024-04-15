@@ -3,3 +3,4 @@ dash-leaflet==0.1.23
 dash==2.6.2
 pandas==1.1.5
 gunicorn==20.1.0
+flask==2.2.2
